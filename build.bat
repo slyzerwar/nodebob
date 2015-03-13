@@ -38,10 +38,16 @@ echo.
 call :ColorText 0a "Copying files..."
 echo.
 if not exist %CUR_DIR%\release\ffmpegsumo.dll copy %CUR_DIR%\buildTools\nw\ffmpegsumo.dll %CUR_DIR%\release\ffmpegsumo.dll
-if not exist %CUR_DIR%\release\icudt.dll copy %CUR_DIR%\buildTools\nw\icudt.dll %CUR_DIR%\release\icudt.dll
+if not exist %CUR_DIR%\release\icudtl.datt copy %CUR_DIR%\buildTools\nw\icudtl.dat %CUR_DIR%\release\icudtl.dat
 if not exist %CUR_DIR%\release\libEGL.dll copy %CUR_DIR%\buildTools\nw\libEGL.dll %CUR_DIR%\release\libEGL.dll
 if not exist %CUR_DIR%\release\libGLESv2.dll copy %CUR_DIR%\buildTools\nw\libGLESv2.dll %CUR_DIR%\release\libGLESv2.dll
 if not exist %CUR_DIR%\release\nw.pak copy %CUR_DIR%\buildTools\nw\nw.pak %CUR_DIR%\release\nw.pak
+if not exist %CUR_DIR%\release\pdf.dll copy %CUR_DIR%\buildTools\nw\pdf.dll %CUR_DIR%\release\pdf.dll
+if not exist %CUR_DIR%\release\nwjc.exe copy %CUR_DIR%\buildTools\nw\nwjc.exe %CUR_DIR%\release\nwjc.exe
+if not exist %CUR_DIR%\release\nw.exe copy %CUR_DIR%\buildTools\nw\nw.exe %CUR_DIR%\release\nw.exe
+if not exist %CUR_DIR%\release\d3dcompiler_47.dll copy %CUR_DIR%\buildTools\nw\d3dcompiler_47.dll %CUR_DIR%\release\d3dcompiler_47.dll
+
+
 
 echo.
 call :ColorText 0a "Deleting temporary files..."
